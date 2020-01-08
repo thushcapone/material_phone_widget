@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialPhoneWidget</string>
+    
+    <string name="sample_hint_phone_number">Entrez votre numéro de téléphone</string>
+</resources>

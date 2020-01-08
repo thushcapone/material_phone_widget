@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MaterialPhoneWidget</string>
+    
+    <string name="hint_phone_number">Numéro de téléphone</string>
+    <string name="error_phone_not_valid">Le numéro de téléphone n\'est pas valide</string>
+</resources>

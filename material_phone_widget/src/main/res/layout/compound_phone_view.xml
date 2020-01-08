@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <com.thushcapone.material_edit_text.MaterialEditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="@string/hint_phone_number"
+            app:inputType="phone"
+            />
+        
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/country_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/spacing_tiny"
+            android:layout_marginBottom="@dimen/spacing_small"
+            app:ccp_textFont="@font/roboto"
+            app:ccp_countryPreference="SN,IT,FR,US,CA,ES"/>
+    
+    </FrameLayout>
+
+</merge>
