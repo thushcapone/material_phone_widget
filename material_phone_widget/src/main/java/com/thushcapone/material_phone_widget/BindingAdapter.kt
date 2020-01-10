@@ -39,7 +39,7 @@ fun getTextValue(phone: PhoneWidget): String? {
 @BindingAdapter("countryCodeListener")
 fun countryCodeListener(phone: PhoneWidget, listener: PhoneWidget.OnCountryCodeListener){
     phone.countryCodePicker?.setOnCountryChangeListener {
-        listener.value(it)
+        listener.value(it.iso.toUpperCase(Locale.getDefault()))
         phone.editPhone?.edit?.clear()
         phone.countryCode = it.iso.toUpperCase(Locale.getDefault())
     }
