@@ -61,7 +61,7 @@ dependencies {
     api 'com.github.joielechong:countrycodepicker:2.4.1'
 
     //Used for custom edit text
-    api 'com.github.thushcapone:material_edit_text:v1.0.2'
+    api 'com.github.thushcapone:material_edit_text:v1.0.4'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
