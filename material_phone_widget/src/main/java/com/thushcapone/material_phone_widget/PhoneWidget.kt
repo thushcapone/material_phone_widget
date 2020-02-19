@@ -37,9 +37,9 @@ import java.util.*
  */
 class PhoneWidget : LinearLayout {
 
-    var editPhone: MaterialEditText? = null
+    internal var editPhone: MaterialEditText? = null
 
-    var countryCodePicker: CountryCodePicker? = null
+    internal var countryCodePicker: CountryCodePicker? = null
 
     private var mPhoneWatcher: PhoneWatcher? = null
 
@@ -192,7 +192,7 @@ class PhoneWidget : LinearLayout {
     }
 
     interface OnCountryCodeListener {
-        fun value(countryCode: String)
+        fun value(countryCode: Country)
     }
 
     interface OnValidPhoneListener {
