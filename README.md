@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/thushcapone/material_phone_widget.svg)](https://jitpack.io/#thushcapone/material_phone_widget) 
 
-MaterialPhoneWidget is your phone widget compatible with Android Architecture Component 
+MaterialPhoneWidget is your phone widget that is Android Architecture Component friendly, compatible with Data-Binding and two ways binding
 
 ### Demo
 ![gif of MaterialPhoneWidget](https://raw.githubusercontent.com/thushcapone/material_phone_widget/master/screenshots/demo-material-phone.gif)
@@ -45,8 +45,8 @@ dependencies {
   android:layout_height="wrap_content"  
   android:layout_gravity="center"  
   app:hint="Enter your phone number"
-  app:phoneNumber="@={viewModel.phoneNumber}"  
-  app:onValidPhoneListener="@{viewModel::onValidPhoneTyped}"  
+  bind:phoneNumber="@={viewModel.phoneNumber}"  
+  bind:onValidPhoneListener="@{viewModel::onValidPhoneTyped}"  
   bind:countryCodeListener="@{viewModel::onCountryCodeSelected}"  
   />
 ```
@@ -61,7 +61,8 @@ Table below describes the properties available to customize the AwesomeNavigatio
 | hint            | reference     | Set the string resource used as the default hint                             |
 | defaultCountry            | string | Set the default country code to show, expecting the country short code (E.g. `'US'`, `'FR'`) |
 | phoneNumber           | binding-value | Will receive the value of the phoneNumber typed  |
-| countryCodeListener                | binding-function | Will be called when the country picker's value changed |
+| validPhoneListener                | binding-function | Will be called when a valid phone has been typed and passes the phone typed `validPhone` |
+| countryCodeListener                | binding-function | Will be called when the country picker's value changed and passes the country code selected `countryCode`|
 
 # License
 ```
